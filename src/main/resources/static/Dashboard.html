@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<h2>Admin Dashboard</h2>
+
+
+<br><br>
+
+<button onclick="goUsers()">View Users</button>
+<button onclick="logout()">Logout</button>
+
+<script>
+    function goUsers() {
+        window.location.href = "users.html";
+    }
+
+    function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>
